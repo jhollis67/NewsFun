@@ -14,7 +14,7 @@
         <!--NewsFun-->
         <scene sceneID="9fs-7G-Rnv">
             <objects>
-                <tableViewController id="9mn-GE-fgb" sceneMemberID="viewController">
+                <tableViewController id="9mn-GE-fgb" customClass="ArticleTableViewController" customModule="NewsFun" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZFU-Et-8d8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,25 +52,16 @@
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="kqR-0z-hVS" firstAttribute="leading" secondItem="2jd-0c-ymj" secondAttribute="leading" constant="5" id="1pC-up-5qz"/>
+                                        <constraint firstAttribute="trailing" secondItem="kqR-0z-hVS" secondAttribute="trailing" constant="5" id="1A5-b1-hxt"/>
                                         <constraint firstAttribute="trailing" secondItem="LiJ-bg-ZIX" secondAttribute="trailing" constant="5" id="2MW-MR-NEU"/>
-                                        <constraint firstItem="kqR-0z-hVS" firstAttribute="leading" secondItem="2jd-0c-ymj" secondAttribute="leading" constant="5" id="F1a-Dn-Fou"/>
+                                        <constraint firstItem="kqR-0z-hVS" firstAttribute="leading" secondItem="2jd-0c-ymj" secondAttribute="leading" constant="5" id="7CF-Uv-dWZ"/>
                                         <constraint firstItem="LiJ-bg-ZIX" firstAttribute="leading" secondItem="2jd-0c-ymj" secondAttribute="leading" constant="5" id="K30-qO-BkM"/>
-                                        <constraint firstItem="kqR-0z-hVS" firstAttribute="top" secondItem="i7H-m6-CjM" secondAttribute="bottom" id="KV4-SY-Ulv"/>
-                                        <constraint firstAttribute="bottom" secondItem="kqR-0z-hVS" secondAttribute="bottom" id="Kbr-OY-ejE"/>
                                         <constraint firstAttribute="trailing" secondItem="i7H-m6-CjM" secondAttribute="trailing" constant="5" id="M4I-EG-G3j"/>
-                                        <constraint firstAttribute="trailing" secondItem="kqR-0z-hVS" secondAttribute="trailing" constant="5" id="NYr-R3-Ts6"/>
                                         <constraint firstItem="LiJ-bg-ZIX" firstAttribute="top" secondItem="2jd-0c-ymj" secondAttribute="topMargin" id="ULm-4p-TgE"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="kqR-0z-hVS" secondAttribute="bottom" id="Y4d-QH-05P"/>
+                                        <constraint firstAttribute="bottom" secondItem="kqR-0z-hVS" secondAttribute="bottom" id="bRQ-2k-jeM"/>
                                         <constraint firstItem="i7H-m6-CjM" firstAttribute="leading" secondItem="2jd-0c-ymj" secondAttribute="leading" constant="5" id="dQV-08-Uas"/>
-                                        <constraint firstItem="kqR-0z-hVS" firstAttribute="top" secondItem="i7H-m6-CjM" secondAttribute="bottom" id="eo4-6Z-fWE"/>
-                                        <constraint firstAttribute="trailing" secondItem="kqR-0z-hVS" secondAttribute="trailing" constant="5" id="ftX-ce-CRb"/>
-                                        <constraint firstItem="kqR-0z-hVS" firstAttribute="leading" secondItem="2jd-0c-ymj" secondAttribute="leading" constant="5" id="ljK-B7-jkN"/>
-                                        <constraint firstAttribute="bottom" secondItem="kqR-0z-hVS" secondAttribute="bottom" id="miS-4O-abR"/>
-                                        <constraint firstItem="kqR-0z-hVS" firstAttribute="leading" secondItem="2jd-0c-ymj" secondAttribute="leading" constant="5" id="pIg-J1-Kc8"/>
                                         <constraint firstItem="i7H-m6-CjM" firstAttribute="top" secondItem="LiJ-bg-ZIX" secondAttribute="bottom" id="trh-hG-Grl"/>
-                                        <constraint firstAttribute="trailing" secondItem="kqR-0z-hVS" secondAttribute="trailing" constant="5" id="xgR-tg-ruG"/>
-                                        <constraint firstAttribute="trailing" secondItem="kqR-0z-hVS" secondAttribute="trailing" constant="5" id="xrj-RR-fVr"/>
+                                        <constraint firstItem="kqR-0z-hVS" firstAttribute="top" secondItem="i7H-m6-CjM" secondAttribute="bottom" id="ygi-H4-F23"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -92,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="637.60000000000002" y="67.916041979010501"/>
         </scene>
-        <!--View Controller-->
+        <!--Article Web View Controller-->
         <scene sceneID="5rO-BY-xLf">
             <objects>
-                <viewController id="XhS-67-WNW" sceneMemberID="viewController">
+                <viewController id="XhS-67-WNW" customClass="ArticleWebViewController" customModule="NewsFun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cly-ZX-Gn4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
