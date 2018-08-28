@@ -78,7 +78,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="NewsFun" id="FDU-Tw-MtN">
                         <barButtonItem key="backBarButtonItem" title="Articles" id="3tu-3Y-h8y"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="PZT-zF-2lo"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="PZT-zF-2lo">
+                            <connections>
+                                <action selector="reloadTapped:" destination="9mn-GE-fgb" id="MHF-jG-zec"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="XhS-67-WNW" kind="show" identifier="goToURL" id="iMW-1j-2N5"/>
@@ -114,6 +118,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tfk-El-7fR"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="Uhx-Xa-dQX" id="QCa-gw-p8a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Du9-OI-MT4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
